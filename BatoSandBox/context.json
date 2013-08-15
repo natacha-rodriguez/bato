@@ -3,21 +3,21 @@
     "persistenceManager":"PersistenceManager",
     "inflector":"SpanishInflector",
     "db":{
-        "string":"mysql:host=localhost;dbname=inmobiliaria",
+        "string":"mysql:host=localhost;dbname=dbname",
         "username":"root",
         "password":"password"
     },
     "logger":{
-        "logFile":"/var/www/Inmobiliaria/logs/inmobiliaria.debug.log",
+        "logFile":"/path/to/log/file/appName.debug.log",
         "debugLevel":["debug","error"]
     },
     "viewManager":{
         "class":"SmartyViewManager",
         "settings":{
-            "templatesDir":"/var/www/Inmobiliaria/views/",
-            "templatesCDir":"/var/www/Inmobiliaria/local/smarty/templates_c/",
-            "cacheDir":"/var/www/Inmobiliaria/local/smarty/cache/",
-            "configs":"/var/www/Inmobiliaria/local/smarty/configs/"
+            "templatesDir":"/path/to/views/",
+            "templatesCDir":"/path/to/templates_c/",
+            "cacheDir":"/path/to/smarty/cache/",
+            "configs":"/path/to/smarty/configs/"
         }
     }
 }
