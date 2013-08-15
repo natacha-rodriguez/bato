@@ -1,0 +1,23 @@
+{
+    "mapper":"CStyleMapper",
+    "persistenceManager":"PersistenceManager",
+    "inflector":"SpanishInflector",
+    "db":{
+        "string":"mysql:host=localhost;dbname=inmobiliaria",
+        "username":"root",
+        "password":"password"
+    },
+    "logger":{
+        "logFile":"/var/www/Inmobiliaria/logs/inmobiliaria.debug.log",
+        "debugLevel":["debug","error"]
+    },
+    "viewManager":{
+        "class":"SmartyViewManager",
+        "settings":{
+            "templatesDir":"/var/www/Inmobiliaria/views/",
+            "templatesCDir":"/var/www/Inmobiliaria/local/smarty/templates_c/",
+            "cacheDir":"/var/www/Inmobiliaria/local/smarty/cache/",
+            "configs":"/var/www/Inmobiliaria/local/smarty/configs/"
+        }
+    }
+}
